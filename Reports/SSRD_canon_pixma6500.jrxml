@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SSRD" language="groovy" pageWidth="609" pageHeight="459" orientation="Landscape" columnWidth="570" leftMargin="19" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b04b6ccd-75c3-4f0b-8f19-dffd9f631270">
+	<property name="ireport.zoom" value="1.7715610000000048"/>
+	<property name="ireport.x" value="318"/>
+	<property name="ireport.y" value="355"/>
+	<field name="nama" class="java.lang.String"/>
+	<field name="alamat" class="java.lang.String"/>
+	<field name="jenis_retribusi" class="java.lang.String"/>
+	<field name="bulan_tahun" class="java.lang.String"/>
+	<field name="rekening" class="java.lang.String"/>
+	<field name="P4B" class="java.lang.String"/>
+	<field name="admin" class="java.lang.String"/>
+	<field name="formulir" class="java.lang.String"/>
+	<field name="peneng" class="java.lang.String"/>
+	<field name="total" class="java.lang.String"/>
+	<field name="terbilang" class="java.lang.String"/>
+	<field name="tanggal" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="349" splitType="Stretch">
+			<textField>
+				<reportElement uuid="5e9c5a06-1ed4-40cf-92cb-98531b737a91" x="232" y="131" width="74" height="10"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0269b402-3f93-4776-8f4f-22f66df6d9ad" x="232" y="145" width="74" height="15"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{alamat}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="06be4bf4-dcb2-4623-a273-7e75cba3e39e" x="450" y="131" width="79" height="10"/>
+				<textElement markup="none">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Retribusi IMB]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="339690c9-1750-4be9-8976-9927235324bb" x="450" y="145" width="79" height="15"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bulan_tahun}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="64bacb4a-970c-40f1-978e-80f29bdd20de" x="181" y="181" width="75" height="15"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{rekening}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="5705ebdb-f6a1-46ca-95ad-f18c0fe154e4" x="306" y="181" width="73" height="15"/>
+				<textElement markup="none">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Retribusi P4B]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7b4fa77f-273c-469a-8cd1-4f2aca8a8970" x="306" y="196" width="73" height="15"/>
+				<textElement markup="none">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Retribusi Admin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f02ed481-0e34-4ea1-9d4b-5377736940b7" x="306" y="211" width="73" height="15"/>
+				<textElement markup="none">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Retribusi Formulir]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f2cc339d-ac5f-45fa-9d76-6de5db3b9ef1" x="306" y="226" width="73" height="15"/>
+				<textElement markup="none">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Peneng]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="b2a3c4d1-3ff0-448c-9d7c-5447c45b7271" x="494" y="181" width="73" height="15"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{P4B}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1c18c3ce-339c-4d9c-956d-93c9e5574809" x="494" y="211" width="73" height="15"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{formulir}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="26f12ce5-cb71-44b2-b4d7-dd41be706db2" x="494" y="196" width="73" height="15"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{admin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="93ef7fa4-b56f-4bfe-af13-c02ad24d5703" x="494" y="226" width="73" height="15"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{peneng}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="74e5beee-7ec7-4b6d-bf31-eefcaed68008" x="494" y="242" width="73" height="15"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="a4bc84f3-294c-42c5-8b73-2917d98b3d78" x="477" y="181" width="17" height="15"/>
+				<textElement textAlignment="Right" markup="none">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Rp.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="89916a9c-186c-4ad3-8e37-5297deecae18" x="477" y="196" width="17" height="15"/>
+				<textElement textAlignment="Right" markup="none">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Rp.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="aa3e70ae-a409-45b2-b4c3-80a3002873be" x="477" y="211" width="17" height="15"/>
+				<textElement textAlignment="Right" markup="none">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Rp.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="22bb6aad-38c1-4fa9-a14d-090d2ac2a1ac" x="477" y="226" width="17" height="15"/>
+				<textElement textAlignment="Right" markup="none">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Rp.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="939a0b01-bb3b-4808-936e-a1fd9ce5c74b" x="477" y="242" width="17" height="15"/>
+				<textElement textAlignment="Right" markup="none">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Rp.]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="90baf971-7299-4138-9b30-3e8fc230a605" x="477" y="241" width="90" height="1"/>
+			</line>
+			<textField>
+				<reportElement uuid="5fc5aafa-9963-4fce-934f-26dc9a0b98fc" x="231" y="269" width="336" height="16"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{terbilang}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="9a36ca3b-2ea6-43e5-9b03-bdc29f90759f" x="232" y="295" width="75" height="15"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tanggal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="9d743e5b-e657-402f-9860-b400d7cc5b19" x="460" y="295" width="75" height="15"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tanggal}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+</jasperReport>

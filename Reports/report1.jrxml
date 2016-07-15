@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b1f98453-a3ac-4667-b45c-ac63ea8daf94">
+	<property name="ireport.zoom" value="1.2100000000000009"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="29"/>
+	<style name="Title" fontName="Arial" fontSize="26" isBold="true" pdfFontName="Helvetica-Bold"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<parameter name="author" class="java.lang.String"/>
+	<field name="nim" class="java.lang.String"/>
+	<field name="nama" class="java.lang.String"/>
+	<field name="tgl_lahir" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="84" splitType="Stretch">
+			<image>
+				<reportElement uuid="d4e1fabb-5a16-4fd6-a858-9456365c33e4" x="275" y="0" width="300" height="64"/>
+				<imageExpression><![CDATA["leaf_banner_green.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="c88aed22-e4d9-4cf3-ae6e-b538e77ac84d" style="Title" x="0" y="13" width="263" height="33"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Leaf Green Title]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="35398e24-9982-4079-aba9-e293dc164de8" style="SubTitle" x="100" y="46" width="174" height="22"/>
+				<textElement/>
+				<text><![CDATA[Leaf Green SubTitle]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="43" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="cc4fc9c4-74cf-49bd-bb8a-ca3f934ac321" style="Column header" x="0" y="19" width="66" height="15"/>
+				<textElement/>
+				<text><![CDATA[author : ]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="ec351092-8948-4239-9818-69e4da4a2e58" style="Column header" x="66" y="19" width="134" height="15"/>
+				<textElement markup="none"/>
+				<textFieldExpression><![CDATA[$P{author}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="38" splitType="Stretch">
+			<line>
+				<reportElement uuid="0fa39d01-409c-4542-a28f-ccfcbaecb17b" positionType="FixRelativeToBottom" x="0" y="35" width="555" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement uuid="aaac64c5-36bb-47d5-849f-17eefc3f7822" style="Column header" x="100" y="19" width="100" height="15"/>
+				<textElement/>
+				<text><![CDATA[NaMa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="47f74b95-e74e-4f88-b6d6-e1d9ac674db5" style="Column header" x="200" y="19" width="100" height="15"/>
+				<textElement/>
+				<text><![CDATA[Tanggal Lahir]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="80b5b37a-dc05-4c99-946d-b8269bd0aff9" style="Column header" x="0" y="19" width="100" height="15"/>
+				<textElement/>
+				<text><![CDATA[NIM]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="37" splitType="Stretch">
+			<line>
+				<reportElement uuid="d6659b56-e46d-41fd-978a-da9b198b72a9" positionType="FixRelativeToBottom" x="0" y="15" width="555" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement uuid="36a19249-55ce-44bf-8dd0-1bd608812b0d" style="Detail" x="0" y="0" width="100" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{nim}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f7fbf77a-f765-4d12-91ee-4422791c72b4" style="Detail" x="100" y="1" width="100" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f41e585d-7974-4ba5-aca8-fea9c1071351" style="Detail" x="200" y="0" width="100" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{tgl_lahir}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<line>
+				<reportElement uuid="e965a7ae-6a1d-4b2d-a017-f3b1062e401a" positionType="FixRelativeToBottom" x="0" y="3" width="555" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement uuid="fd2fa26d-6351-4f9f-addc-23631c22f6ee" style="Column header" x="433" y="0" width="80" height="20"/>
+				<textElement textAlignment="Right">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="f08c72cc-382c-4ecf-8416-e1b41c517be1" style="Column header" x="513" y="0" width="40" height="20"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement uuid="17bdbb21-2724-4d05-98c3-e7bc10066818" style="Column header" x="0" y="0" width="197" height="20"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="pencari_kerja_pixma6500.jasper" language="groovy" pageWidth="822" pageHeight="595" orientation="Landscape" columnWidth="822" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="0c159db0-9661-484e-883b-d51f2b7ae304">
+	<property name="ireport.zoom" value="1.9487171000000072"/>
+	<property name="ireport.x" value="18"/>
+	<property name="ireport.y" value="361"/>
+	<field name="kelamin" class="java.lang.String"/>
+	<field name="status_pernikahan" class="java.lang.String"/>
+	<field name="agama" class="java.lang.String"/>
+	<field name="alamat" class="java.lang.String"/>
+	<field name="no_pendaftaran" class="java.lang.String"/>
+	<field name="no_induk_kependudukan" class="java.lang.String"/>
+	<field name="nama_lengkap" class="java.lang.String"/>
+	<field name="ttl" class="java.lang.String"/>
+	<field name="tahun1" class="java.lang.String"/>
+	<field name="tahun2" class="java.lang.String"/>
+	<field name="tahun3" class="java.lang.String"/>
+	<field name="tahun4" class="java.lang.String"/>
+	<field name="tahun5" class="java.lang.String"/>
+	<field name="tahun6" class="java.lang.String"/>
+	<field name="tahun7" class="java.lang.String"/>
+	<field name="tahun8" class="java.lang.String"/>
+	<field name="keterampilan1" class="java.lang.String"/>
+	<field name="keterampilan2" class="java.lang.String"/>
+	<field name="keterampilan3" class="java.lang.String"/>
+	<field name="tahun_keterampilan1" class="java.lang.String"/>
+	<field name="tahun_keterampilan2" class="java.lang.String"/>
+	<field name="tahun_keterampilan3" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="592" splitType="Stretch">
+			<textField>
+				<reportElement uuid="3abc4ed1-f73d-4fbd-8035-3192e71b38cd" x="128" y="270" width="222" height="15"/>
+				<textElement markup="none"/>
+				<textFieldExpression><![CDATA[$F{no_pendaftaran}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="c9525112-02a8-4c38-8615-2db7198f2eea" x="128" y="285" width="222" height="15"/>
+				<textElement markup="none"/>
+				<textFieldExpression><![CDATA[$F{no_induk_kependudukan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="9a9fccba-a716-42e7-a3d7-d7439ddcda3f" x="128" y="300" width="222" height="15"/>
+				<textElement markup="none"/>
+				<textFieldExpression><![CDATA[$F{nama_lengkap}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="dc52bb68-759f-4eaf-ab48-0374f98ac688" x="128" y="315" width="222" height="15"/>
+				<textElement markup="none"/>
+				<textFieldExpression><![CDATA[$F{ttl}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="e8ddbdda-50b6-44bc-8fad-caa8043b7a4b" x="128" y="336" width="29" height="1">
+					<propertyExpression name="net.sf.jasperreports.style.pen.lineWidth"><![CDATA[($F{kelamin}.equals("Pria")) ? "0" : "1"]]></propertyExpression>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement uuid="c7026f2f-db8c-4351-b4d5-1887e4bca498" x="176" y="336" width="33" height="1">
+					<propertyExpression name="net.sf.jasperreports.style.pen.lineWidth"><![CDATA[($F{kelamin}.equals("Pria")) ? "1" : "0"]]></propertyExpression>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement uuid="5a30af80-a83d-4a88-bb25-b80efd2c100e" x="128" y="351" width="29" height="1">
+					<propertyExpression name="net.sf.jasperreports.style.pen.lineWidth"><![CDATA[($F{status_pernikahan}.equals("Kawin")) ? "0" : "1"]]></propertyExpression>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement uuid="a092696a-af8f-4ecf-b7f3-101b27f4c06b" x="176" y="351" width="48" height="1">
+					<propertyExpression name="net.sf.jasperreports.style.pen.lineWidth"><![CDATA[($F{status_pernikahan}.equals("Kawin")) ? "1" : "0"]]></propertyExpression>
+				</reportElement>
+			</line>
+			<rectangle radius="10">
+				<reportElement uuid="b8f909ea-b51f-4e27-bf29-fc7f1b3657ed" x="128" y="361" width="32" height="13">
+					<propertyExpression name="net.sf.jasperreports.style.pen.lineWidth"><![CDATA[($F{agama}.equals("Islam")) ? "1" : "0"]]></propertyExpression>
+				</reportElement>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement uuid="4f1b7846-a4a8-49e8-8f8f-5ef36d1baf1c" x="176" y="361" width="46" height="13">
+					<propertyExpression name="net.sf.jasperreports.style.pen.lineWidth"><![CDATA[($F{agama}.equals("Khatolik")) ? "1" : "0"]]></propertyExpression>
+				</reportElement>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement uuid="1ecb243b-1dd2-476a-bfb4-38123ff071e4" x="253" y="361" width="46" height="13">
+					<propertyExpression name="net.sf.jasperreports.style.pen.lineWidth"><![CDATA[($F{agama}.equals("Protestan")) ? "1" : "0"]]></propertyExpression>
+				</reportElement>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement uuid="c094824e-55bc-4276-8c2b-0c7145e74457" x="128" y="374" width="32" height="13">
+					<propertyExpression name="net.sf.jasperreports.style.pen.lineWidth"><![CDATA[($F{agama}.equals("Hindu")) ? "1" : "0"]]></propertyExpression>
+				</reportElement>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement uuid="486d4f87-0038-4007-a241-5518c4559b15" x="176" y="375" width="46" height="13">
+					<propertyExpression name="net.sf.jasperreports.style.pen.lineWidth"><![CDATA[($F{agama}.equals("Budha")) ? "1" : "0"]]></propertyExpression>
+				</reportElement>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement uuid="0bc53d6f-9de2-48ed-a576-9f8cfeb9437e" x="253" y="375" width="46" height="13">
+					<propertyExpression name="net.sf.jasperreports.style.pen.lineWidth"><![CDATA[($F{agama}.equals("Lain-lain")) ? "1" : "0"]]></propertyExpression>
+				</reportElement>
+			</rectangle>
+			<textField>
+				<reportElement uuid="cbfdf9ec-ac17-4c99-9074-d79b85c78f79" x="128" y="395" width="171" height="25"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{alamat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="c6fbdd15-e13a-4bbb-ad24-8322361428ad" x="583" y="199" width="116" height="12"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tahun1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d6457b14-7407-4ce0-91c3-86cf322c44bc" x="583" y="211" width="116" height="12"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tahun2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1db78050-abb3-4c2b-a709-f077e580e5f9" x="583" y="223" width="116" height="12"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tahun3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="b90523df-80bf-4a0e-85c1-03dc68447307" x="583" y="235" width="116" height="12"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tahun4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="69736027-3e36-48b5-aef5-4cd7e11fb587" x="583" y="247" width="116" height="12"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tahun5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1ba14e46-eb8c-4bf3-b958-b2c5f07e6986" x="583" y="259" width="116" height="12"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tahun6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="39f8914c-44ad-433f-8215-d79f7fbb0441" x="583" y="271" width="116" height="12"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tahun7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="b3eaec4c-8730-4f39-b403-2a7741b09417" x="583" y="284" width="116" height="12"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tahun8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="96aa63cb-a167-4f95-b12e-4fd090eac691" x="583" y="315" width="116" height="12"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{keterampilan1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="2cc499e3-d02a-463c-ba34-bdce7815a227" x="583" y="327" width="116" height="12"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{keterampilan2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d7ef7b6f-ae26-4dab-bc4e-22b6f955e298" x="583" y="339" width="116" height="12"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{keterampilan3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="63e2813b-ddb5-49be-ad7b-ebac9088c749" x="699" y="315" width="116" height="12"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tahun_keterampilan1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d308f5e5-5cb6-4824-a5cd-6c2c3d7624e3" x="699" y="327" width="116" height="12"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tahun_keterampilan2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="344ad505-3a03-4cdb-b2ef-f79bfe95b062" x="699" y="340" width="116" height="12"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tahun_keterampilan3}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+</jasperReport>
